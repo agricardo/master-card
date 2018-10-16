@@ -5,10 +5,10 @@ import './index.css';
 
 
 var cardInfo ={
-  bankName: 'Chase Bank, Inc.',
-  numberCard: '1234  5678  8765  4321',
-  expirationDate: '08/19',
-  name: 'CARDHOLDER NAME'
+  bankName: 'Party tonight',
+  numberCard: '9999 ave 99 st Miami FL 33133',
+  expirationDate: '',
+  name: 'Ricardo Aranda'
 };
 
 function CreditCard({card}){
@@ -16,9 +16,9 @@ function CreditCard({card}){
   return <div className="credit-card">
     <div className='bank-name'>{bankName}</div>
     <div className="number-card">{numberCard}</div>
-    <div className='first-four-digits'>{numberCard.substring(0,4)}</div>
+    {/* <div className='first-four-digits'>{numberCard.substring(0,4)}</div> */}
     <div className="expiration-date">
-      <span className="valid-thru">Valid Thru</span>{expirationDate}
+      {/* <span className="valid-thru">Valid Thru</span>{expirationDate} */}
     </div>
     <div className='name'>{name}</div>
   </div>
