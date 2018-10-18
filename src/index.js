@@ -7,12 +7,12 @@ import './index.css';
 var cardInfo ={
   bankName: 'Party tonight',
   numberCard: '9999 ave 99 st Miami FL 33133',
-  expirationDate: '',
+ 
   name: 'Ricardo Aranda'
 };
 
 function CreditCard({card}){
-  var {bankName, numberCard, expirationDate, name} = card;
+  var {bankName, numberCard, name} = card;
   return <div className="credit-card">
     <div className='bank-name'>{bankName}</div>
     <div className="number-card">{numberCard}</div>
